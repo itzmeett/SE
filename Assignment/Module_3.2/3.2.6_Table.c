@@ -1,10 +1,10 @@
 //WAP to print table up to given numbers
 #include<stdio.h>
-main()
+void main()
 {
-	int tab, size, i, store;
+	int tab, size, i;
 	
-	Printf("Which table do you want : ");
+	printf("Which table do you want : ");
 	scanf("%d", &tab);
 	
 	printf("Up to where you want to need : ");
@@ -12,7 +12,7 @@ main()
 	
 	for(i =0; i<size; i++)
 	{
-		store = tab*size; 
+		printf("\n%d x %d = %d" ,tab, i+1, tab*(i+1));
 	}
-	printf("Table of %d : %d x %d = %d", tab, tab, size, store);
+
 }
