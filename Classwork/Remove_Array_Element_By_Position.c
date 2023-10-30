@@ -1,3 +1,4 @@
+//Remove element by position
 #include<stdio.h>
 main()
 {
