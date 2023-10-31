@@ -2,6 +2,7 @@
 case.(Must Be Menu Driven) */
 
 #include<stdio.h>
+#include<stdlib.h>
 main()
 {
 	int num1, num2, i;
@@ -20,12 +21,14 @@ main()
 	printf("\nPress 3 for Multiplication operation");
 	printf("\nPress 4 for Division operation");
 	printf("\nPress 5 for Modulo operation");
+	printf("\nPress 6 for EXIT");
 	
 	printf("\n\nPress between 1 to 5 : ");
 	scanf("%d", &i);
 	
 	printf("\n____________________________________________________________________\n");
 	
+	do{
 	switch(i)
 	{
 		case 1:
@@ -53,11 +56,17 @@ main()
 				printf("\n\nModulo of %d modulo %d = %d", num1, num2, num1%num2);
 				break;
 			}
+		case 6:
+			{
+				exit(1);
+				break;
+			}
 			default :
 				{
 					printf("\nYou have inserted a wrong input");
 					break;
 				}
 	}
+}while(i!=6);
 	
 }
