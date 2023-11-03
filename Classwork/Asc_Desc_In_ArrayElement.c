@@ -33,7 +33,7 @@ main()
 		printf(" %d ",a[i]);
     }
     
-    	printf("\n\nDecending Order : ");
+    printf("\n\nDecending Order : ");
     	
     for(i=0;i<size;i++)
 	{

@@ -15,42 +15,60 @@ main()
 	
 	// Using do while loop for exit menu
 	
-	while(choice !=5){
+	while(1){
 	
 	printf("\n\nEnter your choice : ");
 	scanf("%d", &choice);
 	
-	printf("\nEnter First Number : ");
-	scanf("%f", &n1);
-	
-	printf("Enter Second Number : ");
-	scanf("%f", &n2);
-		
 	switch(choice)
 	{
 		case 1: { 
+			printf("\nEnter First Number : ");
+			scanf("%f", &n1);
+	
+			printf("Enter Second Number : ");
+			scanf("%f", &n2);
+		
 			printf("\nAddition = %.2f", n1+n2); 
 			printf("\n------------------------------------------");
 			break;
 		}
 		case 2:
 			{
+			printf("\nEnter First Number : ");
+			scanf("%f", &n1);
+	
+			printf("Enter Second Number : ");
+			scanf("%f", &n2);
+			
 			printf("\nSubstraction = %.2f", n1-n2);
 			printf("\n------------------------------------------");
 			break;
 			}
 		case 3:{
+			printf("\nEnter First Number : ");
+			scanf("%f", &n1);
+	
+			printf("Enter Second Number : ");
+			scanf("%f", &n2);
+			
 			printf("\nMultiplication = %.2f", n1*n2);
 			printf("\n------------------------------------------");
 			break;
 		}
 		case 4:{
+			printf("\nEnter First Number : ");
+			scanf("%f", &n1);
+	
+			printf("Enter Second Number : ");
+			scanf("%f", &n2);
+			
 			printf("\nDivision = %.2f", n1/n2);
 			printf("\n------------------------------------------");
 			break;
 		}
 		case 5:{
-			exit(1);
+			exit(0);
 			break;
 		}
 		default:{
