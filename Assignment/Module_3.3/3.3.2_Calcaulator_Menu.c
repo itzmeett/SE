@@ -23,50 +23,52 @@ main()
 	printf("\nPress 5 for Modulo operation");
 	printf("\nPress 6 for EXIT");
 	
+	
 	printf("\n\nPress between 1 to 5 : ");
 	scanf("%d", &i);
 	
 	printf("\n____________________________________________________________________\n");
 	
-	do{
+	while(1)
+	{
 	switch(i)
 	{
 		case 1:
 			{
 				printf("\n\nAddition of %d + %d = %d", num1, num2, num1+num2);
-				break;
 			}
+				break;
 		case 2:
 			{
 				printf("\n\nSubstraction of %d - %d = %d", num1, num2, num1-num2);
-				break;
 			}
+				break;
 		case 3:
 			{
 				printf("\n\nMultiplication of %d * %d = %d", num1, num2, num1*num2);
-				break;
 			}
+				break;
 		case 4:
 			{
 				printf("\n\nDivision of %d / %d = %d", num1, num2, num1/num2);
-				break;
 			}
+				break;
 		case 5:
 			{
 				printf("\n\nModulo of %d modulo %d = %d", num1, num2, num1%num2);
-				break;
 			}
+				break;
 		case 6:
 			{
-				exit(1);
-				break;
+				exit(0);
 			}
+				break;
 			default :
 				{
 					printf("\nYou have inserted a wrong input");
-					break;
 				}
+					break;
 	}
-}while(i!=6);
+}
 	
 }
