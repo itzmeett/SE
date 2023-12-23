@@ -1,10 +1,9 @@
-/*Define a class to represent a bank account. Include the following members:
-Data Member:
--Name of the depositor
--Account Number
--Type of Account
--Balance amount in the account
+/* 
+12. Write a C++ program to implement a class called Bank Account that has
+private member variables for account number and balance. Include
+member functions to deposit and withdraw money from the account.
 */
+
 #include<iostream>
 using namespace std;
 
@@ -24,9 +23,6 @@ class Bank{
 			
 			cout<<"\nEnter the account number : ";
 			cin>>acc_no;
-			
-			cout<<"\nWhich type of account these, saving or current ? : ";
-			cin>>acc_type;
 			
 			cout<<"\nEnter your Balance ammount : ";
 			cin>>balance;
