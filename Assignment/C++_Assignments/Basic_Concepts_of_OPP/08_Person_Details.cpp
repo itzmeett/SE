@@ -17,7 +17,7 @@ class  Person{
 			cout<<"\nEnter your name : ";
 			cin>>name;
 			
-			cout<"\nEnter your country name : ";
+			cout<<"\nEnter your country name : ";
 			cin>>country;
 		}
 		
